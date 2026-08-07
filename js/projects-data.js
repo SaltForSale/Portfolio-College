@@ -1,0 +1,197 @@
+window.PORTFOLIO_PROJECTS = [
+  {
+    "title": "NAS Access Reporting Automation",
+    "type": "Enterprise data automation",
+    "year": "2026",
+    "category": "featured",
+    "description": "Built a Python and pandas workflow that merged NAS share data with user, owner, and support-contact records from multiple sources. The script cleaned inconsistent fields, identified missing ownership details, and produced review-ready Excel reports that reduced manual cleanup and supported access-remediation work.",
+    "technologies": [
+      "Python",
+      "pandas",
+      "Excel",
+      "Data validation"
+    ],
+    "status": "Professional project",
+    "anchor": "nas"
+  },
+  {
+    "title": "PvE Extraction Dungeon",
+    "type": "Game systems project",
+    "year": "2026",
+    "category": "featured",
+    "description": "Building a class-based PvE extraction dungeon crawler in Roblox where players enter with a selected class, clear procedurally assembled rooms, collect gear, and decide when to extract. The project includes persistent lobby storage, item loss on death, room voting, enemy variants, loot, hazards, and modular server-side systems for combat, damage, and dungeon flow.",
+    "technologies": [
+      "Roblox Studio",
+      "Luau",
+      "Systems design",
+      "Server architecture"
+    ],
+    "status": "In development",
+    "anchor": "dungeon"
+  },
+  {
+    "title": "Three-Level Unity Platformer",
+    "type": "Game development",
+    "year": "2025",
+    "category": "featured",
+    "description": "Built a three-level 2D platformer in Unity with responsive movement, jumping, a directional dash, hazards, button-activated platforms, goal triggers, and scene transitions. I also added a persistent death counter, sound effects, particles, and feedback systems, then structured the levels so each one introduced and combined the core mechanics more deliberately.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "2D physics",
+      "Game feel"
+    ],
+    "status": "Course project",
+    "anchor": "platformer"
+  },
+  {
+    "title": "Monopong",
+    "type": "Unity gameplay prototype",
+    "year": "2025",
+    "category": "featured",
+    "description": "Built a physics-based arcade game where the player rotates a single paddle around a circular arena to keep the ball in play. I tuned the paddle movement and collision behavior, then added a three-life system, sound effects, particles, and camera shake to make the simple core mechanic feel more responsive and readable.",
+    "technologies": [
+      "Unity",
+      "C#",
+      "Physics",
+      "Game feel"
+    ],
+    "status": "Course project",
+    "anchor": "monopong"
+  },
+  {
+    "title": "Phase Tw0 Organization Website",
+    "type": "Client collaboration",
+    "year": "2023",
+    "category": "archive",
+    "description": "Worked with an organization lead to plan and build a responsive informational website.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "image": "assets/projectSS/phaseTw0.png",
+    "url": "https://saltforsale.github.io/Phase-Tw0/",
+    "context": "High school project"
+  },
+  {
+    "title": "JavaScript Calculator",
+    "type": "Web application",
+    "year": "2023",
+    "category": "archive",
+    "description": "Built a browser calculator with JavaScript event handling, state, and input validation.",
+    "technologies": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "image": "assets/projectSS/jsCalculator.png",
+    "url": "https://saltforsale.github.io/JS-Calculator/",
+    "context": "High school project"
+  },
+  {
+    "title": "Rock Paper Scissors Game",
+    "type": "Interactive web project",
+    "year": "2022",
+    "category": "archive",
+    "description": "Built a browser game with random computer choices, score tracking, and round-by-round results.",
+    "technologies": [
+      "JavaScript",
+      "DOM",
+      "CSS"
+    ],
+    "image": "assets/projectSS/rpsGame.png",
+    "url": "https://saltforsale.github.io/RPS-JS-Project/",
+    "context": "High school project"
+  },
+  {
+    "title": "AJAX Image Carousel",
+    "type": "Frontend exercise",
+    "year": "2023",
+    "category": "archive",
+    "description": "Built an image carousel and used AJAX to load and update content.",
+    "technologies": [
+      "AJAX",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "image": "assets/projectSS/ajaxCarousel.png",
+    "url": "https://saltforsale.github.io/Lee-P2/",
+    "context": "High school project"
+  },
+  {
+    "title": "Jack Kirby Interactive Profile",
+    "type": "Content website",
+    "year": "2022",
+    "category": "archive",
+    "description": "Built an informational site with a JavaScript accordion gallery.",
+    "technologies": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "image": "assets/projectSS/hero.png",
+    "url": "https://saltforsale.github.io/Hero-Project/",
+    "context": "High school project"
+  },
+  {
+    "title": "Vue Movie Picks",
+    "type": "Framework exercise",
+    "year": "2023",
+    "category": "archive",
+    "description": "Built a movie-picks page with Vue components.",
+    "technologies": [
+      "Vue",
+      "JavaScript",
+      "CSS"
+    ],
+    "image": "assets/projectSS/vueMovies.png",
+    "url": "https://saltforsale.github.io/NJIT-3_StarterFiles/",
+    "context": "High school project"
+  },
+  {
+    "title": "Annabelle Film Website",
+    "type": "Team web project",
+    "year": "2022",
+    "category": "archive",
+    "description": "Worked with a partner to build a responsive Bootstrap site about the film Annabelle.",
+    "technologies": [
+      "Bootstrap",
+      "HTML",
+      "CSS"
+    ],
+    "image": "assets/projectSS/annabelle.png",
+    "url": "https://saltforsale.github.io/Annabelle-Project/",
+    "context": "High school project"
+  },
+  {
+    "title": "CSS Ghost Animation",
+    "type": "CSS exercise",
+    "year": "2022",
+    "category": "archive",
+    "description": "Created an animated character using CSS shapes, positioning, and keyframes.",
+    "technologies": [
+      "CSS animation",
+      "HTML"
+    ],
+    "image": "assets/projectSS/cssGhost.png",
+    "url": "https://saltforsale.github.io/ghost-resized/",
+    "context": "High school project"
+  },
+  {
+    "title": "Color Photography Parallax",
+    "type": "Visual web project",
+    "year": "2021",
+    "category": "archive",
+    "description": "Displayed original photography in a parallax scrolling layout.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Parallax"
+    ],
+    "image": "assets/projectSS/colors.png",
+    "url": "https://saltforsale.github.io/Colors-Project/",
+    "context": "High school project"
+  }
+];

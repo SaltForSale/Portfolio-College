@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected software engineering, automation, game development, and frontend projects by Evan Lee.">
+  <meta name="theme-color" content="#010415">
+  <meta name="color-scheme" content="dark">
+  <title>Projects | Evan Lee</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-transparent-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-transparent-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon-transparent-64.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/brand/favicon-transparent-512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon-transparent.png">
+  <link rel="shortcut icon" href="assets/brand/favicon-transparent.ico">
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="projects">
+  <div class="page-grid" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+<nav class="navbar navbar-expand-lg site-nav sticky-top" aria-label="Primary navigation">
+  <div class="container-fluid container-xl nav-frame">
+    <div class="navbar-brand brand-identity">
+      <a class="brand-logo-link" href="index.html" aria-label="Go to Evan Lee's homepage">
+        <span class="brand-logo-plate" aria-hidden="true">
+          <img src="assets/brand/brand-mark.png" alt="" width="800" height="800">
+        </span>
+      </a>
+      <span class="brand-copy"><strong>Evan Lee</strong><small>Software + systems</small></span>
+    </div>
+    <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center nav-list">
+        <li class="nav-item"><a class="nav-link" href="index.html"><span>Home</span></a></li><li class="nav-item"><a class="nav-link" href="about.html"><span>About</span></a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html"><span>Projects</span></a></li><li class="nav-item"><a class="nav-link" href="contact.html"><span>Contact</span></a></li>
+        <li class="nav-item ms-lg-2"><a class="btn action-btn action-btn-solid action-btn-sm" href="assets/resume/Evan_Lee_Resume.pdf" target="_blank" rel="noopener"><span>Resume</span><span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <main id="main-content">
+<header class="inner-hero inner-hero-projects">
+  <div class="container-xl">
+    <div class="inner-hero-grid">
+      <div class="inner-index" aria-hidden="true">03</div>
+      <div><p class="micro-label">Projects</p><h1>Software tools,<br><span>games, and web projects.</span></h1><p class="inner-lead">Professional work, course projects, independent game development, and older frontend projects.</p></div>
+    </div>
+  </div>
+</header>
+
+<section class="section-block" aria-labelledby="project-focus-title">
+  <div class="container-xl">
+    <header class="section-header">
+      <div class="section-number">01</div>
+      <div><p class="micro-label">Recent work</p><h2 id="project-focus-title">Recent projects.</h2></div>
+    </header>
+    <div class="featured-work-list">
+      <article class="feature-work" id="nas">
+        <div class="feature-code">A01</div>
+        <div class="feature-main"><p class="micro-label">Enterprise data automation · 2026</p><h3>NAS Access Reporting Automation</h3><div class="feature-description"><p>During my internship at TD Securities, I built a Python and pandas workflow to turn several separate NAS data sources into one usable access-review report. The source files described shares, users, ownership, and support contacts in different formats, so the script had to normalize names and identifiers, join related records, and flag shares where ownership or support information was incomplete.</p><p>The final output organized the data into review-ready Excel reports that application and support teams could use to verify ownership and begin remediation. I focused on making the process repeatable instead of producing a one-time spreadsheet: the code handled inconsistent values, preserved the fields reviewers needed, and cut down the manual cleanup required whenever the source data changed.</p></div><div class="chip-list"><span>Python</span><span>pandas</span><span>Excel</span><span>Data validation</span></div></div>
+        <div class="feature-status"><span>Professional project</span><strong>TD Securities</strong></div>
+      </article>
+      <article class="feature-work" id="dungeon">
+        <div class="feature-code">B02</div>
+        <div class="feature-main"><p class="micro-label">Game systems project · 2026</p><h3>PvE Extraction Dungeon</h3><div class="feature-description"><p>I am building a class-based PvE extraction dungeon crawler in Roblox. Players choose a class in the lobby, enter a dungeon, clear connected combat rooms, collect equipment, and decide whether to continue deeper or extract. Loot carried during a run is temporary until extraction; dying removes the equipped items and current-run stash, while a successful extraction moves the recovered items into persistent lobby storage.</p><p>The project is structured around modular server-side systems for combat, damage, dungeon generation, loot, and player state. The dungeon supports locked encounters, group room transitions, extraction and progression voting, hazards, boss rooms, and enemy archetypes such as ranged attackers, healers, shield units, exploding enemies, poison casters, and splitting slimes. I have also been designing twelve classes with distinct abilities, including dashes, marks, auras, summons, shields, traps, pulls, and execution effects.</p></div><div class="chip-list"><span>Roblox Studio</span><span>Luau</span><span>Systems design</span><span>Server architecture</span></div></div>
+        <div class="feature-status"><span>In development</span><strong>Independent</strong></div>
+      </article>
+      <article class="feature-work" id="platformer">
+        <div class="feature-code">C03</div>
+        <div class="feature-main"><p class="micro-label">Game development · 2025</p><h3>Three-Level Unity Platformer</h3><div class="feature-description"><p>For an RPI game-development project, I built a three-level 2D platformer around a compact movement set: horizontal movement, jumping, and a directional dash. The controller manages ground checks, dash duration and cooldown, hazard collisions, player death, and scene transitions. Each level uses the same controls but introduces new combinations of spikes, gaps, moving routes, and buttons that create platforms needed to reach the goal.</p><p>I treated the project as both a programming exercise and a game-feel exercise. A persistent death counter carries across levels, while jump, dash, death, button, and goal sound effects make player actions easier to read. I also added particles and feedback at important moments, then adjusted level layouts so the first stage teaches the controls, the second tests timing, and the third combines the mechanics before the final win scene.</p></div><div class="chip-list"><span>Unity</span><span>C#</span><span>2D physics</span><span>Game feel</span></div></div>
+        <div class="feature-status"><span>Course project</span><strong>RPI</strong></div>
+      </article>
+      <article class="feature-work" id="monopong">
+        <div class="feature-code">D04</div>
+        <div class="feature-main"><p class="micro-label">Unity gameplay prototype · 2025</p><h3>Monopong</h3><div class="feature-description"><p>Monopong is a physics-based arcade prototype built around one unusual constraint: the player controls a single paddle that rotates around the inside of a circular arena. Using left and right input, the player has to predict the ball's path, reposition the paddle along the ring, and keep the ball from escaping. Most of the implementation work involved making circular movement, paddle orientation, and ball collisions behave consistently.</p><p>Because the core mechanic is deliberately simple, I spent time on feedback and pacing. The game tracks three lives and clearly resets play after a miss. Sound effects, particles, and camera shake reinforce paddle hits, failures, and other important events without changing the rules of the game. The result was a small prototype that helped me practice Unity physics, input handling, state management, and tuning moment-to-moment responsiveness.</p></div><div class="chip-list"><span>Unity</span><span>C#</span><span>Physics</span><span>Game feel</span></div></div>
+        <div class="feature-status"><span>Course project</span><strong>RPI</strong></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-block section-soft projects-archive-section" aria-labelledby="archive-title">
+  <div class="container-xl">
+    <header class="section-header">
+      <div class="section-number">02</div>
+      <div><p class="micro-label">High school projects</p><h2 id="archive-title">Frontend projects from high school.</h2><p class="section-copy">Projects from 2021–2023 while I was learning HTML, CSS, JavaScript, Bootstrap, AJAX, and Vue.</p></div>
+    </header>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="project-archive" aria-live="polite"></div>
+  </div>
+</section>
+</main>
+  <footer class="site-footer">
+  <div class="container-xl footer-frame">
+    <div>
+      <p class="footer-name">Evan Lee</p>
+      <p class="footer-note">Computer Science + Game Simulation Arts and Science</p>
+    </div>
+    <div class="footer-links" aria-label="External links">
+      <a href="mailto:elee823@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/evanglee/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/SaltForSale" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="footer-copy">© <span data-current-year>2026</span></p>
+  </div>
+</footer>
+  <script src="js/projects-data.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
