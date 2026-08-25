@@ -14,19 +14,21 @@
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
 
-  const chips = (items) => `<div class="chip-list">${items.map((item) => `<span>${escapeHtml(item)}</span>`).join('')}</div>`;
+  const chips = (items = []) => `<div class="chip-list">${items.map((item) => `<span>${escapeHtml(item)}</span>`).join('')}</div>`;
+
+  const featured = projects.filter((project) => project.category === 'featured');
+  const archive = projects.filter((project) => project.category === 'archive');
 
   const featuredContainer = document.querySelector('#featured-projects');
   if (featuredContainer) {
-    const featured = projects.filter((project) => project.category === 'featured').slice(0, 3);
-    featuredContainer.innerHTML = featured.map((project, index) => `
+    featuredContainer.innerHTML = featured.slice(0, 3).map((project, index) => `
       <div class="col-lg-4">
         <a class="featured-project-link" href="projects.html#${encodeURIComponent(project.anchor || '')}" aria-label="Read about ${escapeHtml(project.title)}">
           <article class="featured-project-card" data-index="0${index + 1}">
             <div class="project-card-meta"><span>${escapeHtml(project.type)}</span><span>${escapeHtml(project.year)}</span></div>
             <h3>${escapeHtml(project.title)}</h3>
-            <p>${escapeHtml(project.description)}</p>
-            ${chips(project.technologies || [])}
+            <p>${escapeHtml(project.summary)}</p>
+            ${chips(project.technologies)}
             <span class="project-open" aria-hidden="true">↗</span>
           </article>
         </a>
@@ -34,21 +36,37 @@
     `).join('');
   }
 
+  const recentContainer = document.querySelector('#recent-projects');
+  if (recentContainer) {
+    recentContainer.innerHTML = featured.map((project) => `
+      <article class="feature-work" id="${escapeHtml(project.anchor)}">
+        <div class="feature-code">${escapeHtml(project.code)}</div>
+        <div class="feature-main">
+          <p class="micro-label">${escapeHtml(project.type)} · ${escapeHtml(project.year)}</p>
+          <h3>${escapeHtml(project.title)}</h3>
+          <p class="feature-summary">${escapeHtml(project.summary)}</p>
+          <ul class="feature-highlights">${(project.highlights || []).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
+          ${chips(project.technologies)}
+        </div>
+        <div class="feature-status"><span>${escapeHtml(project.status)}</span><strong>${escapeHtml(project.organization)}</strong></div>
+      </article>
+    `).join('');
+  }
+
   const archiveContainer = document.querySelector('#project-archive');
   if (archiveContainer) {
-    const archive = projects.filter((project) => project.category === 'archive');
     archiveContainer.innerHTML = archive.map((project, index) => `
       <div class="col">
         <a class="archive-link" href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(project.title)}">
           <article class="archive-card">
-            <div class="archive-image"><img src="${escapeHtml(project.image)}" alt="Screenshot of ${escapeHtml(project.title)}" loading="lazy" width="900" height="506"></div>
+            <div class="archive-image"><img src="${escapeHtml(project.image)}" alt="Screenshot of ${escapeHtml(project.title)}" loading="lazy" decoding="async" width="900" height="506"></div>
             <div class="archive-body">
               <span class="archive-index">${String(index + 1).padStart(2, '0')}</span>
               <span class="archive-context">${escapeHtml(project.context || 'High school project')}</span>
               <div class="archive-meta"><span>${escapeHtml(project.type)}</span><span>${escapeHtml(project.year)}</span></div>
               <h3>${escapeHtml(project.title)}</h3>
-              <p>${escapeHtml(project.description)}</p>
-              ${chips(project.technologies || [])}
+              <p>${escapeHtml(project.summary)}</p>
+              ${chips(project.technologies)}
             </div>
           </article>
         </a>

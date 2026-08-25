@@ -1,0 +1,35 @@
+# Evan Lee Portfolio
+
+> Evan Lee is a student at Rensselaer Polytechnic Institute pursuing a Bachelor of Science in Computer Science (CSCI) and Game Simulation Arts and Science (GSAS), expected May 2028. His work spans platform engineering, Python automation, data validation, monitoring, Unity, and Roblox game systems.
+
+## Primary pages
+
+- [Portfolio overview](https://saltforsale.github.io/Portfolio-College/): Current profile, internship experience, and selected work.
+- [About Evan Lee](https://saltforsale.github.io/Portfolio-College/about.html): Education, technical skills, and internship history.
+- [Projects](https://saltforsale.github.io/Portfolio-College/projects.html): Recent automation and game projects plus an archive of frontend work.
+- [Contact](https://saltforsale.github.io/Portfolio-College/contact.html): Email, LinkedIn, GitHub, résumé, and Summer 2027 availability.
+- [Résumé](https://saltforsale.github.io/Portfolio-College/assets/resume/Evan_Lee_Resume.pdf): Current one-page résumé.
+
+## Current facts
+
+- Name: Evan Lee
+- School: Rensselaer Polytechnic Institute (RPI)
+- Degree: Bachelor of Science in Computer Science (CSCI) and Game Simulation Arts and Science (GSAS)
+- Expected graduation: May 2028
+- Most recent role: Platform Engineering and Support Summer Analyst at TD Securities, June-August 2026
+- Previous employer: Siemens Financial Services, summer internships in 2024 and 2025
+- Availability: Summer 2027 internships
+- Focus areas: Software engineering, platform engineering, data automation, monitoring, and game development
+
+## Selected work
+
+- NAS Access Reporting Automation: Python/pandas workflow that joined NAS share, session, user, owner, and support-contact data into review-ready Excel reports.
+- PvE Extraction Dungeon: Class-based Roblox dungeon crawler with server-authoritative combat, procedural rooms, persistent storage, loot loss, and extraction systems.
+- Three-Level Unity Platformer: 2D Unity game with responsive movement, directional dashing, hazards, triggered platforms, persistent death tracking, and player feedback.
+- Monopong: Unity arcade prototype with circular paddle movement, physics-based collisions, a three-life loop, particles, sound, and camera shake.
+
+## Contact
+
+- Email: elee823@gmail.com
+- LinkedIn: https://www.linkedin.com/in/evanglee/
+- GitHub: https://github.com/SaltForSale

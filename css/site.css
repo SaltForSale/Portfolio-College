@@ -1288,7 +1288,8 @@ p {
   color: var(--gray);
 }
 
-.feature-description {
+.feature-description,
+.feature-summary {
   max-width: 860px;
   margin: 1.25rem 0 1.5rem;
 }
@@ -1300,6 +1301,21 @@ p {
 
 .feature-description p + p {
   margin-top: 0.9rem;
+}
+
+.feature-highlights {
+  max-width: 860px;
+  margin: 0 0 1.5rem;
+  padding-left: 1.2rem;
+  color: var(--gray);
+}
+
+.feature-highlights li + li {
+  margin-top: 0.45rem;
+}
+
+.feature-highlights li::marker {
+  color: var(--blue);
 }
 
 /* Keep the high-school project section angled at the top but flush at the footer. */

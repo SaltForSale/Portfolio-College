@@ -3,10 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Selected software engineering, automation, game development, and frontend projects by Evan Lee.">
+  <meta name="description" content="Explore Evan Lee’s Python automation, platform engineering, Unity, Roblox, and frontend projects with concise implementation details.">
+  <meta name="author" content="Evan Lee">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#010415">
   <meta name="color-scheme" content="dark">
   <title>Projects | Evan Lee</title>
+  <link rel="canonical" href="https://saltforsale.github.io/Portfolio-College/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Evan Lee Portfolio">
+  <meta property="og:title" content="Software and Game Projects | Evan Lee">
+  <meta property="og:description" content="Python automation, platform engineering, Unity, Roblox, and frontend projects with concise implementation details.">
+  <meta property="og:url" content="https://saltforsale.github.io/Portfolio-College/projects.html">
+  <meta property="og:image" content="https://saltforsale.github.io/Portfolio-College/assets/brand/evan-lee-social-card.png">
+  <meta property="og:image:alt" content="Evan Lee — Software and systems portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Software and Game Projects | Evan Lee">
+  <meta name="twitter:description" content="Python automation, platform engineering, Unity, Roblox, and frontend work.">
+  <meta name="twitter:image" content="https://saltforsale.github.io/Portfolio-College/assets/brand/evan-lee-social-card.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-transparent-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-transparent-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon-transparent-64.png">
@@ -15,6 +29,24 @@
   <link rel="shortcut icon" href="assets/brand/favicon-transparent.ico">
   <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Evan Lee — Software and Game Projects",
+    "url": "https://saltforsale.github.io/Portfolio-College/projects.html",
+    "author": {"@type": "Person", "@id": "https://saltforsale.github.io/Portfolio-College/#evan-lee", "name": "Evan Lee"},
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {"@type": "CreativeWork", "position": 1, "name": "NAS Access Reporting Automation", "description": "Python and pandas workflow that joins NAS share, session, user, owner, and support-contact data into review-ready Excel reports.", "url": "https://saltforsale.github.io/Portfolio-College/projects.html#nas"},
+        {"@type": "VideoGame", "position": 2, "name": "PvE Extraction Dungeon", "description": "Class-based Roblox dungeon crawler with server-authoritative combat, procedural rooms, persistent storage, and extraction systems.", "url": "https://saltforsale.github.io/Portfolio-College/projects.html#dungeon"},
+        {"@type": "VideoGame", "position": 3, "name": "Three-Level Unity Platformer", "description": "Three-level 2D Unity platformer with responsive movement, directional dashing, hazards, and triggered platforms.", "url": "https://saltforsale.github.io/Portfolio-College/projects.html#platformer"},
+        {"@type": "VideoGame", "position": 4, "name": "Monopong", "description": "Unity arcade prototype with a rotating paddle inside a circular arena.", "url": "https://saltforsale.github.io/Portfolio-College/projects.html#monopong"}
+      ]
+    }
+  }
+  </script>
 </head>
 <body data-page="projects">
   <div class="page-grid" aria-hidden="true"></div>
@@ -56,28 +88,7 @@
       <div class="section-number">01</div>
       <div><p class="micro-label">Recent work</p><h2 id="project-focus-title">Recent projects.</h2></div>
     </header>
-    <div class="featured-work-list">
-      <article class="feature-work" id="nas">
-        <div class="feature-code">A01</div>
-        <div class="feature-main"><p class="micro-label">Enterprise data automation · 2026</p><h3>NAS Access Reporting Automation</h3><div class="feature-description"><p>During my internship at TD Securities, I built a Python and pandas workflow to turn several separate NAS data sources into one usable access-review report. The source files described shares, users, ownership, and support contacts in different formats, so the script had to normalize names and identifiers, join related records, and flag shares where ownership or support information was incomplete.</p><p>The final output organized the data into review-ready Excel reports that application and support teams could use to verify ownership and begin remediation. I focused on making the process repeatable instead of producing a one-time spreadsheet: the code handled inconsistent values, preserved the fields reviewers needed, and cut down the manual cleanup required whenever the source data changed.</p></div><div class="chip-list"><span>Python</span><span>pandas</span><span>Excel</span><span>Data validation</span></div></div>
-        <div class="feature-status"><span>Professional project</span><strong>TD Securities</strong></div>
-      </article>
-      <article class="feature-work" id="dungeon">
-        <div class="feature-code">B02</div>
-        <div class="feature-main"><p class="micro-label">Game systems project · 2026</p><h3>PvE Extraction Dungeon</h3><div class="feature-description"><p>I am building a class-based PvE extraction dungeon crawler in Roblox. Players choose a class in the lobby, enter a dungeon, clear connected combat rooms, collect equipment, and decide whether to continue deeper or extract. Loot carried during a run is temporary until extraction; dying removes the equipped items and current-run stash, while a successful extraction moves the recovered items into persistent lobby storage.</p><p>The project is structured around modular server-side systems for combat, damage, dungeon generation, loot, and player state. The dungeon supports locked encounters, group room transitions, extraction and progression voting, hazards, boss rooms, and enemy archetypes such as ranged attackers, healers, shield units, exploding enemies, poison casters, and splitting slimes. I have also been designing twelve classes with distinct abilities, including dashes, marks, auras, summons, shields, traps, pulls, and execution effects.</p></div><div class="chip-list"><span>Roblox Studio</span><span>Luau</span><span>Systems design</span><span>Server architecture</span></div></div>
-        <div class="feature-status"><span>In development</span><strong>Independent</strong></div>
-      </article>
-      <article class="feature-work" id="platformer">
-        <div class="feature-code">C03</div>
-        <div class="feature-main"><p class="micro-label">Game development · 2025</p><h3>Three-Level Unity Platformer</h3><div class="feature-description"><p>For an RPI game-development project, I built a three-level 2D platformer around a compact movement set: horizontal movement, jumping, and a directional dash. The controller manages ground checks, dash duration and cooldown, hazard collisions, player death, and scene transitions. Each level uses the same controls but introduces new combinations of spikes, gaps, moving routes, and buttons that create platforms needed to reach the goal.</p><p>I treated the project as both a programming exercise and a game-feel exercise. A persistent death counter carries across levels, while jump, dash, death, button, and goal sound effects make player actions easier to read. I also added particles and feedback at important moments, then adjusted level layouts so the first stage teaches the controls, the second tests timing, and the third combines the mechanics before the final win scene.</p></div><div class="chip-list"><span>Unity</span><span>C#</span><span>2D physics</span><span>Game feel</span></div></div>
-        <div class="feature-status"><span>Course project</span><strong>RPI</strong></div>
-      </article>
-      <article class="feature-work" id="monopong">
-        <div class="feature-code">D04</div>
-        <div class="feature-main"><p class="micro-label">Unity gameplay prototype · 2025</p><h3>Monopong</h3><div class="feature-description"><p>Monopong is a physics-based arcade prototype built around one unusual constraint: the player controls a single paddle that rotates around the inside of a circular arena. Using left and right input, the player has to predict the ball's path, reposition the paddle along the ring, and keep the ball from escaping. Most of the implementation work involved making circular movement, paddle orientation, and ball collisions behave consistently.</p><p>Because the core mechanic is deliberately simple, I spent time on feedback and pacing. The game tracks three lives and clearly resets play after a miss. Sound effects, particles, and camera shake reinforce paddle hits, failures, and other important events without changing the rules of the game. The result was a small prototype that helped me practice Unity physics, input handling, state management, and tuning moment-to-moment responsiveness.</p></div><div class="chip-list"><span>Unity</span><span>C#</span><span>Physics</span><span>Game feel</span></div></div>
-        <div class="feature-status"><span>Course project</span><strong>RPI</strong></div>
-      </article>
-    </div>
+    <div class="featured-work-list" id="recent-projects" aria-live="polite"></div>
   </div>
 </section>
 
@@ -95,7 +106,7 @@
   <div class="container-xl footer-frame">
     <div>
       <p class="footer-name">Evan Lee</p>
-      <p class="footer-note">Computer Science + Game Simulation Arts and Science</p>
+      <p class="footer-note">Computer Science (CSCI) + Game Simulation Arts and Science (GSAS)</p>
     </div>
     <div class="footer-links" aria-label="External links">
       <a href="mailto:elee823@gmail.com">Email</a>
